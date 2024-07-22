@@ -11,6 +11,7 @@ class Library:
             self.message = message
 
     def books(self):
+        print("Name of Books : ")
         for book in self.__books:
             print(book)
 
@@ -20,7 +21,7 @@ class Library:
 
     def total_books(self):
         if self.__no_of_books == len(self.__books):
-            return self.__no_of_books
+            print(f"Total no. of Books : {self.__no_of_books}")
         else:
             raise self.__WrongArgumentValue("Number of books and Name of books are not Same.")
 
